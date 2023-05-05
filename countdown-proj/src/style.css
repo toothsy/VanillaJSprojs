@@ -1,0 +1,40 @@
+html {
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: inherit;
+}
+
+canvas {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.container {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  display: inline-flex;
+}
+
+.timer {
+  color: aqua;
+  font-size: large;
+}
+
+@media (max-width: 968px) {
+  canvas {
+    position: relative;
+    right: -10%;
+    display: block;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+}
